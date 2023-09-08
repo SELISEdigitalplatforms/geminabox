@@ -1,6 +1,6 @@
 # Gem in a Box
 
-Simple way to deploy Gem in a Box server.
+A simple way to deploy Gem in a Box server.
 
 Build
 
@@ -14,7 +14,7 @@ Run
 docker run -it -v $(pwd)/gems/:/app/uploaded-gems/ -e ADMIN_PASSWORD=test -e ADMIN_USERNAME=test -p 3000:3000 gems
 ```
 
-This runs Gem In a Box server with docker volume mounted to `/app/uploaded-gems/` and stored at `$(pwd)/gems/` directory in host machine.
+This runs the Gem In a Box server with docker volume mounted to `/app/uploaded-gems/` and stored at `$(pwd)/gems/` directory in the host machine.
 
 The image required `ADMIN_PASSWORD` and `ADMIN_USERNAME` environment variables.
 
